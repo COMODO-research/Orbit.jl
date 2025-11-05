@@ -1,8 +1,10 @@
-using Comodo
-using GLMakie
-using GeometryBasics
-using LinearAlgebra
-using FileIO
+using Orbit
+using Orbit.Comodo
+using Orbit.Comodo.GLMakie
+using Orbit.GeometryBasics
+using Orbit.LinearAlgebra
+using Orbit.FileIO
+
 using Base.Threads
 
 TOOL_PATH = "C:\\Users\\Karl\\Downloads\\1250_polygon_sphere_100mm.STL"

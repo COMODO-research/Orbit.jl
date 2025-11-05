@@ -2,3 +2,13 @@ name = "Orbit"
 uuid = "06ce8b00-de23-4d09-ba4c-a5211057e2a5"
 version = "0.1.0"
 authors = ["Kevin-Mattheus-Moerman <kevin.moerman@gmail.com>"]
+
+[deps]
+Comodo = "59095408-2761-4f7a-bdc2-044e78630271"
+FileIO = "5789e2e9-d7fb-5bc7-8068-2c6fae9b9549"
+ZipFile = "a5390f91-8eb1-5f08-bee0-b1d1ffed6cea"
+
+[compat]
+Comodo = "1.0.3"
+FileIO = "1.17.1"
+ZipFile = "0.10.1"

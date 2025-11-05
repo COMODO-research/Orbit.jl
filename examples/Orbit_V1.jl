@@ -1,13 +1,14 @@
-using Comodo
-using Comodo.GLMakie
-using Comodo.GLMakie.Colors
-using Comodo.GeometryBasics
-using Comodo.Rotations
-using Comodo.Statistics
-using Comodo.LinearAlgebra
-using Comodo.DelaunayTriangulation
-using FileIO
-using ZipFile
+using Orbit
+using Orbit.Comodo
+using Orbit.Comodo.GLMakie
+using Orbit.Comodo.GLMakie.Colors
+using Orbit.GeometryBasics
+using Orbit.Rotations
+using Orbit.Statistics
+using Orbit.LinearAlgebra
+using Orbit.DelaunayTriangulation
+using Orbit.FileIO
+using Orbit.ZipFile
 
 GLMakie.closeall()
 
@@ -2056,7 +2057,7 @@ end
 # MAIN LAUNCH
 # ============================================================================
 
-function run_printing_orientation_analysis(test_case_number=3, window_title="PBF-LB Print Orientation Analysis", resolution=1.0, slice_resolution=50)
+function run_printing_orientation_analysis(test_case_number=1, window_title="PBF-LB Print Orientation Analysis", resolution=1.0, slice_resolution=50)
     analysis_results = analyse_all_orientations(test_case_number, resolution, slice_resolution)
     println("Creating interface...")
     interface = create_interactive_interface(analysis_results...)
@@ -2072,6 +2073,6 @@ end
 # ============================================================================
 
 # figure, window = run_printing_orientation_analysis(4, "Cervical Cage Analysis", 0.5, 30)
-figure, window = run_printing_orientation_analysis(2, "Cervical Cage Analysis STL", 0.5, 30)
+figure, window = run_printing_orientation_analysis(1, "Cervical Cage Analysis STL", 0.5, 30)
 # figure, window = run_printing_orientation_analysis(3, "Baby Groot 3MF Analysis", 3.0, 20)
 # figure, window = run_printing_orientation_analysis(1, "Stanford Bunny", 0.5, 30)
